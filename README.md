@@ -5,7 +5,8 @@ In this chapter you will be learning about Lists and Strings.
 
 <h3>Jedi Tasks</h3>
 <ol>
-  <li>??????</li>
+  <li>Months Program</li>
+  <li>Decryption Program</li>
   <li>Adventure Game</li>
   <li>Take Home Test</li>
   </ol>
