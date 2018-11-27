@@ -196,8 +196,7 @@ TEXT FORMATTING:
 
 
 '''
-15.) Create a program that loops from 1 to 20 and lists the decimal
-     equivalent of their inverse. Use print formatting to exactly match the following
+15.) Create a program that loops from 1 to 20 and uses print formatting to exactly match the following
      output:
      
      1/1  = 1.0
