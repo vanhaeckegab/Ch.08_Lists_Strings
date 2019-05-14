@@ -1,8 +1,6 @@
+#Sign your name:________________
+
 '''
-HONOR CODE: I solemnly promise that while taking this test I will only use PyCharm or the Internet,
-but I will definitely not ask another person except the instructor. Signed: ______________________
-
-
 1.)
 Write a single program that takes any of the three lists, and prints the average. 
 Use the len function. There is a sum function I haven't told you about. 
