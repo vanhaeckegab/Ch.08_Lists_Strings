@@ -5,8 +5,9 @@ In this chapter you will be learning about Lists, Strings, Text-Formatting and S
 
 <h3>Jedi Tasks</h3>
 <ol>
+    <li>Jedi Training</li>
   <li>Months Program</li>
   <li>Decryption Program</li>
   <li>Adventure Game</li>
-  <li>Take Home Test</li>
+
   </ol>
