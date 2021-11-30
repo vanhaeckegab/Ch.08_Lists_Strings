@@ -9,5 +9,19 @@ your program 40 times. Use a FOR loop from -20 to +20 to generate all the possib
 Secret Message: Lxwp{j}~uj}rxw|*)bx~)l{jltnm)}qn)lxmn7)]qn)ox{ln)r|)\][XWP)r}q)x~*
 '''
 
+sm = "Lxwp{j}~uj}rxw|*)bx~)l{jltnm)}qn)lxmn7)]qn)ox{ln)r|)\][XWP)r}q)x~*"
 
-
+for i in range(-20, 20):
+    check = len(sm)
+    et = ""
+    for c in sm:
+        x = ord(c)
+        x += i
+        l = chr(x)
+        et = et + l
+    for ch in et:
+        if ord(ch) == 32 or ord(ch) == 33 or ord(ch) == 46 or 65 <= ord(ch) <= 90 or 97 <= ord(ch) <= 122:
+            check -= 1
+    if check == 0:
+        break
+print(et)
