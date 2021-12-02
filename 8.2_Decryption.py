@@ -24,4 +24,4 @@ for i in range(-20, 20):
             check -= 1
     if check == 0:
         break
-print(et)
+print(i, " : ",et)
