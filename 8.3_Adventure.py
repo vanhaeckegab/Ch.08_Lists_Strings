@@ -9,9 +9,33 @@ ADVENTURE PROGRAM
 
 room_list = []
 # create rooms and add to room_list
-room = ["You are on the front porch.", 2, None, None, None]
+room = ["You are in the Main hall.", 13, 1, 12, 2]
 room_list.append(room)
-room = ["You are in Bedroom.", 4, 2, None, None]
+room = ["You are in the West Hallway.", None, None, 3, 0]
+room_list.append(room)
+room = ["You are in the East Hallway.", 13, 1, 2, 12]
+room_list.append(room)
+room = ["You are in a room with a guarded door.", 1, None, 6, None]
+room_list.append(room)
+room = ["You are in the Harry Potter Dining Hall.", 2, None, 7, None]
+room_list.append(room)
+room = ["You step into the void.", None, None, None, 6]
+room_list.append(room)
+room = ["You are in the Intersecting Hallway A.", 3, 5, 9, 7]
+room_list.append(room)
+room = ["You are in the Intersecting Hallway B.", 4, 6, 10, 8]
+room_list.append(room)
+room = ["You are in the NFT Room.", None, 7, None, None]
+room_list.append(room)
+room = ["You are in a warehouse with a ballpit in the middle.", 6, None, None, None]
+room_list.append(room)
+room = ["You are in the Sun Room.", 7, None, None, 11]
+room_list.append(room)
+room = ["You Walk into the woods.", None, 10, None, None]
+room_list.append(room)
+room = ["You are in a Basketball Court.", 0, None, None, None]
+room_list.append(room)
+room = ["You are Free of the Building.", None, None, None, None]
 room_list.append(room)
 
 
