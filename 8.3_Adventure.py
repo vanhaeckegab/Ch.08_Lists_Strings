@@ -14,10 +14,13 @@ up, leading to more of the building. To the East there's hallway labeled West an
 hallway labeled West. However designed this place must've been pretty stupid. \n''', 13, 1, 12, 2]
 room_list.append(room)
 room = ['''You are in the West Hallway. There's not much here so you continue walking and realise it leads to another "
-room. There's really nothing to do in here so you should probably just keep going to the next room. \n'''
+room around the corner. There's really nothing to do in here so you should probably just keep going to the next room. 
+\n'''
         , None, None, 3, 0]
 room_list.append(room)
-room = ['''You are in the East Hallway.\n''', 13, 1, 2, 12]
+room = ['''You are in the East Hallway. At the end of the hallway there's a painting of ____. Around the corner there is
+another room. Doesn't seem like there's much to do in this room, maybe the next room will be exiting.\n''', 13, 1, 2,
+        12]
 room_list.append(room)
 room = ["You are in a room with a guarded door.", 1, None, 6, None]
 room_list.append(room)
