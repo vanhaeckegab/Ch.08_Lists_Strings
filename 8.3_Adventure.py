@@ -9,11 +9,15 @@ ADVENTURE PROGRAM
 
 room_list = []
 # create rooms and add to room_list
-room = ["You are in the Main hall.", 13, 1, 12, 2]
+room = ['''You are in the Main hall. There are stairs going to the North going out of the building and stairs going
+up, leading to more of the building. To the East there's hallway labeled West and to the East there is a 
+hallway labeled West. However designed this place must've been pretty stupid. \n''', 13, 1, 12, 2]
 room_list.append(room)
-room = ["You are in the West Hallway.", None, None, 3, 0]
+room = ['''You are in the West Hallway. There's not much here so you continue walking and realise it leads to another "
+room. There's really nothing to do in here so you should probably just keep going to the next room. \n'''
+        , None, None, 3, 0]
 room_list.append(room)
-room = ["You are in the East Hallway.", 13, 1, 2, 12]
+room = ['''You are in the East Hallway.\n''', 13, 1, 2, 12]
 room_list.append(room)
 room = ["You are in a room with a guarded door.", 1, None, 6, None]
 room_list.append(room)
@@ -27,7 +31,7 @@ room = ["You are in the Intersecting Hallway B.", 4, 6, 10, 8]
 room_list.append(room)
 room = ["You are in the NFT Room.", None, 7, None, None]
 room_list.append(room)
-room = ["You are in a warehouse with a ballpit in the middle.", 6, None, None, None]
+room = ["You are in a warehouse with a ball pit in the middle.", 6, None, None, None]
 room_list.append(room)
 room = ["You are in the Sun Room.", 7, None, None, 11]
 room_list.append(room)
