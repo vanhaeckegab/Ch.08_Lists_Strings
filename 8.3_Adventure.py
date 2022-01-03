@@ -30,7 +30,7 @@ room_list.append(room)
 room = ['''
 You are in a room with a guarded door. On either side of the door there is two stone statues on either side of the 
 double doors. You start to reach for the door and you see the statue on the left turn it's head slowly. \n''',
-        1, None, 6, None, '''
+        1, None, None, None, '''
 Would you like to reach for the door?''']
 room_list.append(room)
 room = ['''
@@ -51,7 +51,7 @@ experience something so intense ever again.''']
 room_list.append(room)
 room = ['''
 You are in the Intersecting Hallway A. You see rooms to the North, South, and East. To the West you see a river that 
-goes to the other intersecting hallway.\n''', None, 5, 9, 7, None]
+goes to the other intersecting hallway.\n''', 6, 5, 9, 7, None]
 room_list.append(room)
 room = ['''
 You are in the Intersecting Hallway B. You see rooms to the North, South, and West. To the East you see a river that 
@@ -80,7 +80,9 @@ room = ['''
 You walk into the woods. But as soon as you take your first step out you realise this isn't actually a forest, it's 
 Dust II, the map from the hit game CSGO. The door that was just there behind you is gone and you are left in this desert
 hell-scape alone. Off in the distance you can hear some incomprehensible screaming drawing closer.\n''',
-        None, None, None, None]
+        None, None, None, None, '''
+You run behind a box to take cover
+        ''']
 room_list.append(room)
 room = ['''
 You are in a Basketball Court. In the center is basketball super star LeBron James from the hit movie Space Jam: A New 
@@ -104,7 +106,14 @@ bball = False
 exis = False
 nftpic = False
 exist = False
+sort = False
+print('''
+                                                The Building
+                                              by Gabe Van Haecke
 
+
+Your story begins as many adventures do, lost and all alone in an unfamiliar place.''')
+time.sleep(3)
 while not done:
     bong = True
     print("\n \n", room_list[current_room][0])
@@ -228,9 +237,11 @@ Please choose rock, paper, or scissors, unless you wanna quit''')
                                     else:
                                         print("I'm sorry to inform you that rock smashes scissors, you lose")
                                         loss += 1
+                            elif rps == 4:
+                                rpsg = False
                             else:
                                 print("I don't think you quite understand what's going on.")
-                            if win >= 2 + loss:
+                            if win == 1:
                                 print('''
 Congratulations, you beat the guard. It bows it's head, recognizing your true mastery of the classic game of Rock Paper 
 Scissors. It steps out of the way to the door.''')
@@ -248,7 +259,7 @@ the guard.''')
                                 rpsg = False
                             else:
                                 continue
-                elif current_room == 3 and not rpsguard:
+                elif current_room == 3 and not rpsguard and secondguard:
                     guard2 = input("- ")
                     if guard2.lower() == "y" or guard2.lower() == "yes":
                         print('''
@@ -262,7 +273,7 @@ Then you remember the picture of the nft room, maybe a useless multi-billion dol
 guard. You scroll to the picture of the funny monkey and show it to the guard. It is pleased and steps out of the way,
 letting you enter the door.''')
                             secondguard = False
-                elif current_room == 3 and not secondguard:
+                elif current_room == 3 and not rpsguard and not secondguard:
                     noguard = input("- ")
                     if noguard.lower() == "y" or noguard.lower() == "yes":
                         print('''
@@ -284,9 +295,9 @@ who use to play basketball sitting on the jouch.
                         room_list[7][0] = '''
 You are in the Intersecting Hallway B. You see rooms to the North, South, and West. To the East you see a river that 
 goes to the other intersecting hallway.\n'''
-                elif current_room == 4:
+                elif current_room == 4 and not sort:
                     hat = input("- ")
-                    if hat.lower() == "y" and hat.lower() == " yes":
+                    if hat.lower() == "y" or hat.lower() == "yes":
                         choice = input('''
 You walk up to the line of students waiting their turn to put the sorting hat on. One-by-one each student goes up, wears
 the hat, sits for a couple minutes, then goes and sits at a table. You wait your turn until you can finally go up and
@@ -324,6 +335,7 @@ You step away from the hat, exactly as you were when you first put it on but now
                         room_list[4][5] = '''
 You're already sorted so there's not really any purpose unless you wanna sit with the other kids who were determined to
 have the same personality as you by the talking hat.\n'''
+                        sort = True
                 elif current_room == 5:
                     exis = True
                     current_room = 6
@@ -415,7 +427,13 @@ You leave and go back to the real world. Congratulations you won.
                             else:
                                 print("Please answer the question.")
                     else:
-                        print('''''')
+                        print('''
+You wake up from the strange dream you were having. As you start to lift up your head, you wipe the drool off your cheek
+and realise it got all over the desk. You look up and see the homework assignment you were working on. Suddenly you
+realise the dream you were having before inside the building was you at that very moment. Quickly you rush to the window
+to look outside for the kids playing, and you see them still out there, just as you had dreamt. 
+''')
+                        input("Do you wish to go outside?")
                     bong = False
                     done = True
             break
